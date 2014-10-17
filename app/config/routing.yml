@@ -1,0 +1,4 @@
+joke:
+    resource: "@JokeBundle/Resources/config/routing.yml"
+    prefix:   /
+

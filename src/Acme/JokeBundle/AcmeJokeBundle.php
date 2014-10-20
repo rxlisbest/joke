@@ -4,6 +4,6 @@ namespace Acme\JokeBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class JokeBundle extends Bundle
+class AcmeJokeBundle extends Bundle
 {
 }

@@ -1,3 +1,20 @@
-joke_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: AcmeJokeBundle:Default:index }
+joke_register:
+    path:     /register
+    defaults: { _controller: AcmeJokeBundle:Register:index }
+
+joke_register_save:
+    path:     /register/save
+    defaults: { _controller: AcmeJokeBundle:Register:save }
+
+joke_login:
+    path:     /login
+    defaults: { _controller: AcmeJokeBundle:Login:index }
+
+joke_login_check:
+    path:     /login/check
+    defaults: { _controller: AcmeJokeBundle:Login:check }
+
+joke_index:
+    path:     /
+    defaults: { _controller: AcmeJokeBundle:Index:index }
+

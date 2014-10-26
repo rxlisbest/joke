@@ -17,7 +17,7 @@ class LoginController extends Controller
     public function checkAction(Request $request)
     {
 	$repository = $this->getDoctrine()->getRepository("AcmeJokeBundle:Users");
-	$user = $repository->findOneBy(array('username'=>$request->request->get("username"), 'password'=>$request->request->get("password")));
+	$user = $repository->findOneBy(array('email'=>$request->request->get("email"), 'password'=>md5($request->request->get("password"))));
 	$session = new Session();
 	$session->start();
 	if($user){

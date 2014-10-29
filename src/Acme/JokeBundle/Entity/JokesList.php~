@@ -22,6 +22,12 @@ class JokesList
     private $id;
 
     /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    private $title;
+
+    /**
      * @var text 
      * @ORM\Column(type="text")
      */

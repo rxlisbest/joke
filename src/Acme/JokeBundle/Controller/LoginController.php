@@ -2,7 +2,7 @@
 
 namespace Acme\JokeBundle\Controller;
 
-use Acme\JokeBundle\Entity\User;
+use Acme\JokeBundle\Entity\Users;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Session;

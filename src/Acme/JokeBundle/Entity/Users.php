@@ -5,7 +5,7 @@ namespace Acme\JokeBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * User
+ * Users
  *
  * @ORM\Table()
  * @ORM\Entity

@@ -5,10 +5,10 @@ namespace Acme\JokeBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * jokes_list
+ * JokesList
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="Acme\JokeBundle\Entity\jokes_listRepository")
+ * @ORM\Entity
  */
 class JokesList
 {
@@ -20,6 +20,12 @@ class JokesList
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
+    /**
+     * @var string
+     * @ORM\Column(type="string")
+     */
+    private $title;
 
     /**
      * @var text 
@@ -116,5 +122,28 @@ class JokesList
     public function getCreatetime()
     {
         return $this->createtime;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     * @return JokesList
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string 
+     */
+    public function getTitle()
+    {
+        return $this->title;
     }
 }

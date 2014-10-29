@@ -14,7 +14,7 @@ joke_login_check:
     path:     /login/check
     defaults: { _controller: AcmeJokeBundle:Login:check }
 
-joke_index:
-    path:     /
-    defaults: { _controller: AcmeJokeBundle:Index:index }
+joke_list:
+    path:     /list/{page}
+    defaults: { _controller: AcmeJokeBundle:List:list }
 
